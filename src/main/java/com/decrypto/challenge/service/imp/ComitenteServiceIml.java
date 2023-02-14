@@ -50,8 +50,10 @@ public class ComitenteServiceIml implements ComitenteService {
         Comitente comitente = repository.findById(id)
                 .orElseThrow(() -> new ComitenteNotFoundException(id));
 
-        List<Object> mercados = mercadoService.getMercadosByComitente(comitente.getId());
+        //List<Object> mercados = mercadoService.getMercadosByComitente(comitente.getId());
 
         ComitenteStatsDTO comitenteStatsDTO = new ComitenteStatsDTO();
+
+        return null;
     }
 }
